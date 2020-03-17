@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<title>Kolloquium: Website </title>
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+<nav id="navbar">
+  <ul id="menu">
+  	<li><a href="index.html">Home</a></li>
+  	<li><a href="info.html">Info</a></li>
+  	<li><a href="kontakt.html">Kontakt</a></li>
+  	<li><a href="about.html">Impressum</a></li>
+  </ul>
+</nav>
+</head>
+
+
+<body>
+<p></p>
+<img src="Freigeist_logo.png" alt="Freigeist Capital Logo" class="logo">
+<hr>
+
+
+<!-- Quelle: https://www.w3schools.com/howto/howto_css_rounded_images.asp -->
+<img src="img_avatar.png" alt="Avatar" class="circleright" width="150" height="150">
+
+<!-- Container für Email und Nachricht -->
+<div class="texttop">
+
+<h3>Max Mustermann (CEO)</h3>
+<p>Bewerbungen</p>
+<hr>
+<p>Bitte geben Sie ihre Email ein:</p>
+
+<form name="myform" method="post" action="#" onsubmit="return validateemail();">
+<input type="text" name="email" placeholder="abc@abc.de">
+ 
+  <form name="mymessage" method="input" action="#"><br>
+  	
+	<br>
+	Geben Sie ihre Nachricht ein:
+	<br>
+	<br>
+	<textarea name="message" required="" placeholder="Geben Sie hier ihre Nachricht ein..." rows="7" cols="60"></textarea>  
+
+	<br>
+	<br>
+
+	<form>
+  	<label for="myfile">Dateien hochladen:</label> <br>
+  	<input type="file" id="myfile" name="myfile" multiple><br><br>
+	<input type="submit" value="Senden">
+	<hr> 
+	</form>
+	
+  </form>
+
+<!-- Container ende -->
+</div>
+
+<div class="texttopunder">
+	
+<!-- Quelle: https://www.w3schools.com/howto/howto_css_rounded_images.asp -->
+<img src="img_avatar2.png" alt="Avatar" class="circleleftunder" width="150" height="150">
+
+
+<h3>Irina Musterfrau (Head of Communications)</h3>
+<p>Fragen?</p>
+<hr>
+
+<p>Bitte geben Sie ihre Email ein:</p>
+<form id="email" name="mail"  method="post" action="#" onsubmit="return validateemail();">
+<input type="text" name="email" placeholder= "abc@abc.de">
+	<form name="mymessage" method="input" action="#"><br>
+		<br>
+		Geben Sie ihre Nachricht ein: 
+		<br>
+		<br>
+		<textarea name="message" required="" placeholder="Geben Sie hier ihre Nachricht ein..." rows="7" cols="60"></textarea> 
+		<br>
+		<br>
+	<button onclick="return validateemail()">Senden</button>	
+	<!-- <input type="submit" value="Senden"> -->
+	<hr> 
+	</form>
+
+</form>
+
+</div>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
